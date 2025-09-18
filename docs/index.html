@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sudoku Club — Owner Access</title>
+  <link rel="stylesheet" href="assets/brand.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Unlock Your Owner Packs</h1>
+    <p>Thanks for buying the book! Get <strong>250 puzzles now</strong> and <strong>3 more drops</strong> this year (every ~90 days).</p>
+
+    <form id="gate">
+      <label>Enter the pass-phrase printed next to the QR:
+        <input id="code" type="text" placeholder="e.g., SAMURAI-24" required />
+      </label>
+      <button type="submit">Unlock</button>
+      <p id="msg" class="muted"></p>
+    </form>
+
+    <section id="downloads" style="display:none">
+      <h2>Pack 1 — 250 Puzzles (2025 Q1)</h2>
+      <p>
+        <!-- ✅ change YOUR-USER to your GitHub username -->
+        <a class="btn" href="https://github.com/alexliampuzzles/sudoku-club/releases/download/owner-2025Q1/OwnerPack_2025Q1_Puzzles.pdf">Download Pack 1 (PDF)</a>
+        <a class="btn" href="https://github.com/alexliampuzzles/sudoku-club/releases/download/owner-2025Q1/OwnerPack_2025Q1_Solutions.pdf">Solutions (PDF)</a>
+      </p>
+      <hr />
+      <h3>What’s next?</h3>
+      <ul>
+        <li>Pack 2 in ~90 days</li>
+        <li>Pack 3 in ~180 days</li>
+        <li>Pack 4 in ~270 days</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    // ✅ set this to the exact pass-phrase printed next to your QR (case-insensitive match)
+    const PASS = "SAMURAI-24";
+
+    document.getElementById("gate").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const ok = (document.getElementById("code").value || "").trim().toUpperCase() === PASS.toUpperCase();
+      const msg = document.getElementById("msg");
+      if (ok) {
+        document.getElementById("downloads").style.display = "block";
+        this.style.display = "none";
+      } else {
+        msg.textContent = "That pass-phrase doesn’t match. Check the page next to the QR.";
+      }
+    });
+  </script>
+</body>
+</html>
