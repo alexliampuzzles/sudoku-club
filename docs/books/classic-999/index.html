@@ -21,6 +21,15 @@
   .card h2{margin:.2rem 0 .6rem;text-align:center}
 
   /* buttons */
+  /* Blue text for 'View in browser' buttons */
+  .btn.blue:link,
+  .btn.blue:visited { color: #0b4d9c; }     /* dark blue text */
+  .btn.blue { border-color: #cfd9ee; }      /* subtle bluish border (optional) */
+  .btn.blue:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  }
+
   .btn{
   display:block;text-align:center;font-weight:800;
   border:1px solid #e6e6ea;border-radius:10px;
@@ -47,7 +56,7 @@
   <div class="grid">
     <div class="card">
   <h2>Large-Print (PDF)</h2>
-  <a class="btn"
+  <a class="btn blue"
      href="https://alexliampuzzles.github.io/sudoku-club/books/classic-999/Classic-999-Large-Print.pdf"
      target="_blank" rel="noopener">
     View in browser
@@ -59,7 +68,7 @@
 
 <div class="card">
   <h2>Solutions (PDF)</h2>
-  <a class="btn"
+  <a class="btn blue"
      href="https://alexliampuzzles.github.io/sudoku-club/books/classic-999/Classic-999-Solutions.pdf"
      target="_blank" rel="noopener">
     View in browser
