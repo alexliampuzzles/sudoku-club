@@ -2,106 +2,74 @@
 <!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Classic Sudoku — 180 Puzzles • Finales & Bonus</title>
+<title>Classic-180 • Finales & Bonus — Download or Subscribe</title>
 <style>
-  /* base */
-  body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:24px;line-height:1.55;color:#111}
-  .wrap{max-width:900px;margin:0 auto}
-  h1{margin:.25rem 0; text-align:center}
-  p.lead{margin:.1rem 0 1.1rem;color:#555;text-align:center}
-
-  /* grid */
-  .grid{display:grid;gap:14px;grid-template-columns:1fr}
-  @media (min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
-
-  /* cards */
-  .card{
-    border:1px solid #e6e6ea;border-radius:14px;padding:14px;
-    box-shadow:0 8px 24px rgba(0,0,0,.06);
-    background:#fff;
-  }
+  :root{--ink:#111;--muted:#555;--edge:#e6e6ea;--brand:#0b4d9c}
+  body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:24px;color:var(--ink);line-height:1.55}
+  .wrap{max-width:980px;margin:0 auto}
+  h1{margin:.25rem 0;text-align:center}
+  p.lead{text-align:center;color:var(--muted);margin:.25rem 0 1.25rem}
+  .grid{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:820px){.grid{grid-template-columns:1fr 1fr}}
+  .card{border:1px solid var(--edge);border-radius:14px;padding:16px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.06)}
   .card h2{margin:.2rem 0 .6rem;text-align:center;font-size:1.15rem}
-  .card p.small{font-size:.95rem;color:#555;margin:.45rem 0 0;text-align:center}
-
-  /* buttons */
-  .btn{
-    display:block;text-align:center;font-weight:800;
-    border:1px solid #e6e6ea;border-radius:10px;
-    text-decoration:none;
-    font-size:1.05rem;
-    padding:14px;
-    transition:transform .12s ease, box-shadow .12s ease;
-  }
-  .btn:link,.btn:visited{color:#111}
-  .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
-  .btn:focus{outline:2px solid #1f64ff33;outline-offset:2px}
-  .btn.blue:link,.btn.blue:visited{color:#0b4d9c}
-  .btn.blue{border-color:#cfd9ee}
-  .btn.cta{background:#111;color:#fff;border-color:#111}
-  .btn.cta:link,.btn.cta:visited{color:#fff}
-
-  /* footer */
-  footer{margin-top:18px;text-align:center;color:#666;font-size:.95rem}
-  footer a{color:#0b4d9c;text-decoration:none}
+  .card p.small{font-size:.95rem;color:var(--muted);text-align:center;margin:.5rem 0 0}
+  .btn{display:block;text-align:center;font-weight:800;border:1px solid var(--edge);border-radius:10px;
+       text-decoration:none;font-size:1.05rem;padding:14px;margin:.25rem 0;color:var(--ink)}
+  .btn:hover{box-shadow:0 6px 16px rgba(0,0,0,.08);transform:translateY(-1px)}
+  .btn.primary{background:#111;color:#fff;border-color:#111}
+  .btn.brand{border-color:#cfd9ee;color:var(--brand)}
+  .split h3{margin:.2rem 0 .4rem}
+  footer{margin-top:18px;text-align:center;color:var(--muted);font-size:.95rem}
+  footer a{color:var(--brand);text-decoration:none}
+  .note{background:#f7f8fb;border:1px solid var(--edge);border-radius:12px;padding:12px;margin:10px 0;color:#333}
+  .size-badges{display:flex;gap:8px;justify-content:center;margin:.4rem 0}
+  .size-badges span{border:1px solid var(--edge);border-radius:999px;padding:4px 10px;font-size:.85rem;color:#333}
 </style>
 
 <div class="wrap">
   <h1>Classic Sudoku — 180 Puzzles</h1>
-  <p class="lead">Full step-by-step solutions for the three <strong>Finale</strong> puzzles, plus your bonus pack claim.</p>
+  <p class="lead">Get your <strong>Finale step-by-step solutions</strong> and the <strong>Owner Pack 180</strong>.</p>
 
-  <div class="grid">
-
-    <!-- Finale 60 -->
-    <div class="card">
-      <h2>Level&nbsp;1 — Finale</h2>
-      <a class="btn blue"
-         href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-060_AllSteps_Letter.pdf"
-         target="_blank" rel="noopener">All Steps (PDF, Letter)</a>
-      <a class="btn blue"
-         href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-060_AllSteps_A4.pdf"
-         target="_blank" rel="noopener">All Steps (PDF, A4)</a>
-      <p class="small">Singles-only cascade.</p>
-    </div>
-
-    <!-- Finale 120 -->
-    <div class="card">
-      <h2>Level&nbsp;2 — Finale</h2>
-      <a class="btn blue"
-         href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-120_AllSteps_Letter.pdf"
-         target="_blank" rel="noopener">All Steps (PDF, Letter)</a>
-      <a class="btn blue"
-         href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-120_AllSteps_A4.pdf"
-         target="_blank" rel="noopener">All Steps (PDF, A4)</a>
-      <p class="small">Hidden Singles emphasis • no pairs or locked.</p>
-    </div>
-
-    <!-- Finale 180 -->
-    <div class="card">
-      <h2>Level&nbsp;3 — Grand Finale</h2>
-      <a class="btn blue"
-         href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-180_AllSteps_Letter.pdf"
-         target="_blank" rel="noopener">All Steps (PDF, Letter)</a>
-      <a class="btn blue"
-         href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-180_AllSteps_A4.pdf"
-         target="_blank" rel="noopener">All Steps (PDF, A4)</a>
-      <p class="small">Singles • Pairs • Locked Candidates.</p>
-    </div>
-
+  <div class="note" role="note">
+    Prefer no email? Use <strong>Download now</strong>. Want future drops & updates? Choose <strong>Get via email</strong>.
   </div>
 
-  <div class="grid" style="margin-top:14px">
-    <div class="card" style="grid-column:1/-1">
-      <h2>Owner Pack 180 — Bonus Puzzles</h2>
-      <a class="btn cta" href="https://alex-liam.kit.com/classic-180-bonus" target="_blank" rel="noopener">
-        Claim your bonus puzzles →
-      </a>
-      <p class="small">  </p>
+  <div class="grid split">
+    <div class="card">
+      <h2>Download now (no email)</h2>
+      <h3>Finale — Level 1</h3>
+      <a class="btn brand" href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-060_AllSteps_Letter.pdf" target="_blank" rel="noopener">All Steps (Letter)</a>
+
+      <h3>Finale — Level 2</h3>
+      <a class="btn brand" href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-120_AllSteps_Letter.pdf" target="_blank" rel="noopener">All Steps (Letter)</a>
+    
+      <h3>Finale — Level 3</h3>
+      <a class="btn brand" href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/finales/Finale-180_AllSteps_Letter.pdf" target="_blank" rel="noopener">All Steps (Letter)</a>
+
+      <div class="note" style="margin-top:10px">
+        <strong>Paper size:</strong> Choose A4 in Europe, Letter in US/Canada. PDFs are vector for crisp printing.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Get via email (bonus + updates)</h2>
+      <p>Join to receive the <strong>Owner Pack 180</strong> and future updates. We’ll email both paper sizes and links to the Finale steps.</p>
+      <a class="btn primary" href="https://alex-liam.kit.com/classic-180-bonus" target="_blank" rel="noopener">Subscribe & get the bonus →</a>
+      <p class="small">Unsubscribe anytime. We only send puzzle drops and book updates.</p>
+
+      <h3 style="margin-top:1rem">Already subscribed?</h3>
+      <p class="small">Go straight to your bonus downloads:</p>
+      <div class="size-badges">
+        <span>A4</span><span>US Letter</span>
+      </div>
+      <a class="btn brand" href="https://alexliampuzzles.github.io/sudoku-club/books/classic-180/OwnerPack_180_Letter_v1.pdf" target="_blank" rel="noopener">Owner Pack 180 </a>
+      <a class="btn" href="mailto:contact@alexliampuzzles.com?subject=Owner%20Pack%20180%20help">Need help? Email us</a>
     </div>
   </div>
 
   <footer>
-    Having trouble? Email <a href="mailto:contact@alexliampuzzles.com">contact@alexliampuzzles.com</a> •
+    © 2025 Alex Liam • <a href="mailto:contact@alexliampuzzles.com">contact@alexliampuzzles.com</a> • 
     <a href="https://alexliampuzzles.github.io/sudoku-club/">More books</a>
   </footer>
 </div>
-
